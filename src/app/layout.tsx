@@ -6,7 +6,7 @@ export const metadata: Metadata = {
 	title: "Scavenger Hunt",
 	description: "Let's have some fun and explore Perth!",
 	generator: 'Next.js',
-	manifest: '/manifest.webmanifest',
+	manifest: '/manifest.json',
 	themeColor: '#275942',
 	viewport: 'minimum-scale=1, initial-scale=1, width=device-width, shrink-to-fit=no, viewport-fit=cover',
 	icons: [

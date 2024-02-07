@@ -1,7 +1,7 @@
 {
     "theme_color": "#275942",
     "background_color": "#275942",
-    "display": "browser",
+    "display": "standalone",
     "scope": "/",
     "start_url": "/",
     "name": "Scavenger Hunt",

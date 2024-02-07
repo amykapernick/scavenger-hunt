@@ -2,10 +2,10 @@
 
 import { useEffect, useState } from "react";
 
-const Team = (props) =>
+const Team = (props: any) =>
 {
-	const savedData = window.localStorage?.getItem('hunt-team') || {}
-	const [team, setTeam] = useState(savedData)
+	const savedData = window.localStorage?.getItem('hunt-team') ?? {}
+	const [team, setTeam] = useState<any>(savedData)
 
 	useEffect(() =>
 	{
@@ -19,12 +19,12 @@ const Team = (props) =>
 
 	return (
 		<>
-			<h1>{team.name}</h1>
+			<h1>{team?.name}</h1>
 			<dl>
 				<dt>Duration</dt>
-				<dd>{team.duration}</dd>
+				<dd>{team?.duration}</dd>
 				<dt>Stops</dt>
-				<dd>{team.stops}</dd>
+				<dd>{team?.stops}</dd>
 			</dl>
 		</>
 	)

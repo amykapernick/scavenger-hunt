@@ -11,6 +11,7 @@
   },
   "dependencies": {
     "@clerk/nextjs": "^4.29.6",
+    "@notionhq/client": "^2.2.14",
     "@svgr/webpack": "^8.1.0",
     "next": "14.1.0",
     "next-pwa": "^5.6.0",

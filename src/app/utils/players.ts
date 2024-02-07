@@ -7,7 +7,7 @@ const notion = new Client({
 
 export const getPlayer = cache(async (email: string) =>
 {
-	const data = await notion.databases.query({
+	const data: any = await notion.databases.query({
 		database_id: process.env.CONTESTANTS_DB ?? '',
 		filter: {
 			property: 'Email',
@@ -17,7 +17,7 @@ export const getPlayer = cache(async (email: string) =>
 		}
 	})
 
-	const playerData = data?.results?.[0] && {
+	const playerData: any = data?.results?.[0] && {
 		...data?.results[0].properties,
 		id: data?.results[0].id
 	}

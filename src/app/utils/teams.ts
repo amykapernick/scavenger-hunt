@@ -7,7 +7,7 @@ const notion = new Client({
 
 export const getTeam = cache(async (teamId: string) =>
 {
-	const data = await notion.pages.retrieve({
+	const data: any = await notion.pages.retrieve({
 		page_id: teamId
 	})
 
@@ -19,9 +19,9 @@ export const getTeam = cache(async (teamId: string) =>
 	return teamData
 })
 
-export const formatTeam = (team) =>
+export const formatTeam = (team: any) =>
 {
-	const teamData = {
+	const teamData: any = {
 		id: team.id,
 		name: team.Name.title[0].plain_text,
 		duration: team['Total Duration'].formula.number,
